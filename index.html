@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palindrome Problem</title>
+  </head>
+  <body>
+    <h1>madam</h1>
+    <script>
+      var letters = 'madam'
+      function checkPalidrome(letters) {
+        letters = letters.toLowerCase();
+        letters = letters.replace(/\w/g, '');
+        for (let index=0; index<letters.length; index++){
+          if (letters[index] !== letters[letters.length-1-indexValue]){
+            return false;
+          }
+
+        }
+        return true;
+      }
+      checkPalidrome(letters);
+    </script>
+     
+  </body>
+</html>
